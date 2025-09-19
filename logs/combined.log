@@ -1,0 +1,245 @@
+2025-09-19 09:37:52 [INFO] Server running on port 3000
+2025-09-19 09:37:52 [INFO] Visit http://localhost:3000 to access the application
+2025-09-19 09:37:55 [INFO] MongoDB Connected: ac-mxcj0gx-shard-00-01.ye0jlue.mongodb.net
+2025-09-19 09:38:07 [INFO] ::1 - - [19/Sep/2025:08:38:07 +0000] "GET / HTTP/1.1" 302 35 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 09:38:07 [ERROR] Error: /Users/mac/to-do app/views/login.ejs:1
+ >> 1| <%- include('layouts/main') %>
+    2| 
+    3| <div class="row justify-content-center">
+    4|     <div class="col-md-6">
+
+/Users/mac/to-do app/views/layouts/main.ejs:28
+    26|         <% } %>
+    27|         
+ >> 28|         <%- body %>
+    29|     </main>
+    30| 
+    31|     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+body is not defined - URL: /login - Method: GET
+2025-09-19 09:38:07 [INFO] ::1 - - [19/Sep/2025:08:38:07 +0000] "GET /login HTTP/1.1" 500 1277 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 10:01:25 [ERROR] Error: /Users/mac/to-do app/views/login.ejs:11
+    9| </head>
+    10| <body>
+ >> 11|     <%- include('../partials/header') %>
+    12|     
+    13|     <main class="container mt-4">
+    14|         <% if (locals.success && success.length > 0) { %>
+
+Could not find the include file "../partials/header" - URL: /login - Method: GET
+2025-09-19 10:01:25 [INFO] ::1 - - [19/Sep/2025:09:01:25 +0000] "GET /login HTTP/1.1" 500 1277 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 10:10:39 [INFO] ::1 - - [19/Sep/2025:09:10:39 +0000] "GET /login HTTP/1.1" 200 2750 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 10:10:39 [INFO] ::1 - - [19/Sep/2025:09:10:39 +0000] "GET /css/style.css HTTP/1.1" 200 501 "http://localhost:3000/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 10:10:39 [INFO] ::1 - - [19/Sep/2025:09:10:39 +0000] "GET /js/script.js HTTP/1.1" 200 - "http://localhost:3000/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 10:10:39 [INFO] ::1 - - [19/Sep/2025:09:10:39 +0000] "GET /js/script.js HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 10:10:42 [WARN] 404 - Page not found: /favicon.ico
+2025-09-19 10:10:42 [ERROR] Error: Failed to lookup view "404" in views directory "/Users/mac/to-do app/views" - URL: /favicon.ico - Method: GET
+2025-09-19 10:10:42 [INFO] ::1 - - [19/Sep/2025:09:10:42 +0000] "GET /favicon.ico HTTP/1.1" 500 1277 "http://localhost:3000/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 10:11:53 [ERROR] Error: /Users/mac/to-do app/views/register.ejs:1
+ >> 1| <%- include('layouts/main') %>
+    2| 
+    3| <div class="row justify-content-center">
+    4|     <div class="col-md-6">
+
+/Users/mac/to-do app/views/layouts/main.ejs:28
+    26|         <% } %>
+    27|         
+ >> 28|         <%- body %>
+    29|     </main>
+    30| 
+    31|     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+body is not defined - URL: /register - Method: GET
+2025-09-19 10:11:53 [INFO] ::1 - - [19/Sep/2025:09:11:53 +0000] "GET /register HTTP/1.1" 500 1277 "http://localhost:3000/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:02:31 [ERROR] Error: /Users/mac/to-do app/views/register.ejs:1
+ >> 1| <%- include('./layouts/main') %>
+    2| 
+    3| <div class="row justify-content-center">
+    4|     <div class="col-md-6">
+
+/Users/mac/to-do app/views/layouts/main.ejs:28
+    26|         <% } %>
+    27|         
+ >> 28|         <%- body %>
+    29|     </main>
+    30| 
+    31|     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+body is not defined - URL: /register - Method: GET
+2025-09-19 11:02:31 [INFO] ::1 - - [19/Sep/2025:10:02:31 +0000] "GET /register HTTP/1.1" 500 1277 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:02:39 [ERROR] Error: /Users/mac/to-do app/views/register.ejs:1
+ >> 1| <%- include('../layouts/main') %>
+    2| 
+    3| <div class="row justify-content-center">
+    4|     <div class="col-md-6">
+
+Could not find the include file "../layouts/main" - URL: /register - Method: GET
+2025-09-19 11:02:39 [INFO] ::1 - - [19/Sep/2025:10:02:39 +0000] "GET /register HTTP/1.1" 500 1277 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:05:20 [ERROR] Error: /Users/mac/to-do app/views/register.ejs:11
+    9| </head>
+    10| <body>
+ >> 11|     <%- include('../partials/header') %>
+    12|     
+    13|     <main class="container mt-4">
+    14|         <% if (locals.success && success.length > 0) { %>
+
+Could not find the include file "../partials/header" - URL: /register - Method: GET
+2025-09-19 11:05:20 [INFO] ::1 - - [19/Sep/2025:10:05:20 +0000] "GET /register HTTP/1.1" 500 1277 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:05:31 [INFO] ::1 - - [19/Sep/2025:10:05:31 +0000] "GET /js/script.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:05:32 [WARN] 404 - Page not found: /favicon.ico
+2025-09-19 11:05:32 [ERROR] Error: Failed to lookup view "404" in views directory "/Users/mac/to-do app/views" - URL: /favicon.ico - Method: GET
+2025-09-19 11:05:32 [INFO] ::1 - - [19/Sep/2025:10:05:32 +0000] "GET /favicon.ico HTTP/1.1" 500 1277 "http://localhost:3000/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:05:33 [ERROR] Error: /Users/mac/to-do app/views/register.ejs:11
+    9| </head>
+    10| <body>
+ >> 11|     <%- include('../partials/header') %>
+    12|     
+    13|     <main class="container mt-4">
+    14|         <% if (locals.success && success.length > 0) { %>
+
+Could not find the include file "../partials/header" - URL: /register - Method: GET
+2025-09-19 11:05:33 [INFO] ::1 - - [19/Sep/2025:10:05:33 +0000] "GET /register HTTP/1.1" 500 1277 "http://localhost:3000/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:06:30 [INFO] ::1 - - [19/Sep/2025:10:06:30 +0000] "GET /register HTTP/1.1" 200 2996 "http://localhost:3000/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:06:30 [INFO] ::1 - - [19/Sep/2025:10:06:30 +0000] "GET /css/style.css HTTP/1.1" 304 - "http://localhost:3000/register" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:06:30 [INFO] ::1 - - [19/Sep/2025:10:06:30 +0000] "GET /js/script.js HTTP/1.1" 304 - "http://localhost:3000/register" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:06:30 [INFO] ::1 - - [19/Sep/2025:10:06:30 +0000] "GET /js/script.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:06:31 [WARN] 404 - Page not found: /favicon.ico
+2025-09-19 11:06:31 [ERROR] Error: Failed to lookup view "404" in views directory "/Users/mac/to-do app/views" - URL: /favicon.ico - Method: GET
+2025-09-19 11:06:31 [INFO] ::1 - - [19/Sep/2025:10:06:31 +0000] "GET /favicon.ico HTTP/1.1" 500 1277 "http://localhost:3000/register" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:06:43 [INFO] New user registered: bhavck
+2025-09-19 11:06:43 [INFO] ::1 - - [19/Sep/2025:10:06:43 +0000] "POST /register HTTP/1.1" 302 35 "http://localhost:3000/register" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:06:43 [INFO] ::1 - - [19/Sep/2025:10:06:43 +0000] "GET /login HTTP/1.1" 200 3010 "http://localhost:3000/register" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:06:43 [INFO] ::1 - - [19/Sep/2025:10:06:43 +0000] "GET /css/style.css HTTP/1.1" 304 - "http://localhost:3000/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:06:43 [INFO] ::1 - - [19/Sep/2025:10:06:43 +0000] "GET /js/script.js HTTP/1.1" 304 - "http://localhost:3000/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:06:43 [INFO] ::1 - - [19/Sep/2025:10:06:43 +0000] "GET /js/script.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:06:44 [WARN] 404 - Page not found: /favicon.ico
+2025-09-19 11:06:44 [ERROR] Error: Failed to lookup view "404" in views directory "/Users/mac/to-do app/views" - URL: /favicon.ico - Method: GET
+2025-09-19 11:06:44 [INFO] ::1 - - [19/Sep/2025:10:06:44 +0000] "GET /favicon.ico HTTP/1.1" 500 1277 "http://localhost:3000/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:06:51 [INFO] User logged in: bhavck
+2025-09-19 11:06:51 [INFO] ::1 - - [19/Sep/2025:10:06:51 +0000] "POST /login HTTP/1.1" 302 30 "http://localhost:3000/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:06:51 [INFO] ::1 - - [19/Sep/2025:10:06:51 +0000] "GET / HTTP/1.1" 302 35 "http://localhost:3000/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:06:51 [ERROR] Error: /Users/mac/to-do app/views/index.ejs:1
+ >> 1| <%- include('layouts/main') %>
+    2| 
+    3| <% if (user) { %>
+    4|     <div class="d-flex justify-content-between align-items-center mb-4">
+
+/Users/mac/to-do app/views/layouts/main.ejs:28
+    26|         <% } %>
+    27|         
+ >> 28|         <%- body %>
+    29|     </main>
+    30| 
+    31|     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+body is not defined - URL: /tasks - Method: GET
+2025-09-19 11:06:51 [INFO] ::1 - - [19/Sep/2025:10:06:51 +0000] "GET /tasks HTTP/1.1" 500 1277 "http://localhost:3000/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:08:45 [ERROR] Error: /Users/mac/to-do app/views/index.ejs:1
+ >> 1| <%- include('./layouts/main') %>
+    2| 
+    3| <% if (user) { %>
+    4|     <div class="d-flex justify-content-between align-items-center mb-4">
+
+/Users/mac/to-do app/views/layouts/main.ejs:28
+    26|         <% } %>
+    27|         
+ >> 28|         <%- body %>
+    29|     </main>
+    30| 
+    31|     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+body is not defined - URL: /tasks - Method: GET
+2025-09-19 11:08:45 [INFO] ::1 - - [19/Sep/2025:10:08:45 +0000] "GET /tasks HTTP/1.1" 500 1277 "http://localhost:3000/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:27:19 [ERROR] Error: /Users/mac/to-do app/views/index.ejs:11
+    9| </head>
+    10| <body>
+ >> 11|     <%- include('../partials/header') %>
+    12|     
+    13|     <main class="container mt-4">
+    14|         <% if (locals.success && success.length > 0) { %>
+
+Could not find the include file "../partials/header" - URL: /tasks - Method: GET
+2025-09-19 11:27:19 [INFO] ::1 - - [19/Sep/2025:10:27:19 +0000] "GET /tasks HTTP/1.1" 500 1277 "http://localhost:3000/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:27:25 [ERROR] Error: /Users/mac/to-do app/views/index.ejs:11
+    9| </head>
+    10| <body>
+ >> 11|     <%- include('../partials/header') %>
+    12|     
+    13|     <main class="container mt-4">
+    14|         <% if (locals.success && success.length > 0) { %>
+
+Could not find the include file "../partials/header" - URL: /tasks - Method: GET
+2025-09-19 11:27:25 [INFO] ::1 - - [19/Sep/2025:10:27:25 +0000] "GET /tasks HTTP/1.1" 500 1277 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:27:31 [INFO] ::1 - - [19/Sep/2025:10:27:31 +0000] "GET /login HTTP/1.1" 302 30 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:27:31 [INFO] ::1 - - [19/Sep/2025:10:27:31 +0000] "GET / HTTP/1.1" 302 35 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:27:31 [ERROR] Error: /Users/mac/to-do app/views/index.ejs:11
+    9| </head>
+    10| <body>
+ >> 11|     <%- include('../partials/header') %>
+    12|     
+    13|     <main class="container mt-4">
+    14|         <% if (locals.success && success.length > 0) { %>
+
+Could not find the include file "../partials/header" - URL: /tasks - Method: GET
+2025-09-19 11:27:31 [INFO] ::1 - - [19/Sep/2025:10:27:31 +0000] "GET /tasks HTTP/1.1" 500 1277 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:34:53 [ERROR] Error: /Users/mac/to-do app/views/index.ejs:11
+    9| </head>
+    10| <body>
+ >> 11|     <%- include('../partials/header') %>
+    12|     
+    13|     <main class="container mt-4">
+    14|         <% if (locals.success && success.length > 0) { %>
+
+Could not find the include file "../partials/header" - URL: /tasks - Method: GET
+2025-09-19 11:34:53 [INFO] ::1 - - [19/Sep/2025:10:34:53 +0000] "GET /tasks HTTP/1.1" 500 1277 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:34:58 [INFO] ::1 - - [19/Sep/2025:10:34:58 +0000] "GET /login HTTP/1.1" 302 30 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:34:58 [INFO] ::1 - - [19/Sep/2025:10:34:58 +0000] "GET / HTTP/1.1" 302 35 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:34:58 [ERROR] Error: /Users/mac/to-do app/views/index.ejs:11
+    9| </head>
+    10| <body>
+ >> 11|     <%- include('../partials/header') %>
+    12|     
+    13|     <main class="container mt-4">
+    14|         <% if (locals.success && success.length > 0) { %>
+
+Could not find the include file "../partials/header" - URL: /tasks - Method: GET
+2025-09-19 11:34:58 [INFO] ::1 - - [19/Sep/2025:10:34:58 +0000] "GET /tasks HTTP/1.1" 500 1277 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:35:17 [INFO] ::1 - - [19/Sep/2025:10:35:17 +0000] "GET /tasks HTTP/1.1" 200 2580 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:35:17 [INFO] ::1 - - [19/Sep/2025:10:35:17 +0000] "GET /css/style.css HTTP/1.1" 304 - "http://localhost:3000/tasks" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:35:17 [INFO] ::1 - - [19/Sep/2025:10:35:17 +0000] "GET /js/script.js HTTP/1.1" 304 - "http://localhost:3000/tasks" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:35:17 [INFO] ::1 - - [19/Sep/2025:10:35:17 +0000] "GET /js/script.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:35:18 [WARN] 404 - Page not found: /favicon.ico
+2025-09-19 11:35:18 [ERROR] Error: Failed to lookup view "404" in views directory "/Users/mac/to-do app/views" - URL: /favicon.ico - Method: GET
+2025-09-19 11:35:18 [INFO] ::1 - - [19/Sep/2025:10:35:18 +0000] "GET /favicon.ico HTTP/1.1" 500 1277 "http://localhost:3000/tasks" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:35:22 [INFO] ::1 - - [19/Sep/2025:10:35:22 +0000] "GET /tasks?filter=pending HTTP/1.1" 200 2580 "http://localhost:3000/tasks" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:35:22 [INFO] ::1 - - [19/Sep/2025:10:35:22 +0000] "GET /css/style.css HTTP/1.1" 304 - "http://localhost:3000/tasks?filter=pending" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:35:22 [INFO] ::1 - - [19/Sep/2025:10:35:22 +0000] "GET /js/script.js HTTP/1.1" 304 - "http://localhost:3000/tasks?filter=pending" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:35:22 [INFO] ::1 - - [19/Sep/2025:10:35:22 +0000] "GET /js/script.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:35:22 [WARN] 404 - Page not found: /favicon.ico
+2025-09-19 11:35:22 [ERROR] Error: Failed to lookup view "404" in views directory "/Users/mac/to-do app/views" - URL: /favicon.ico - Method: GET
+2025-09-19 11:35:22 [INFO] ::1 - - [19/Sep/2025:10:35:22 +0000] "GET /favicon.ico HTTP/1.1" 500 1277 "http://localhost:3000/tasks?filter=pending" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:35:23 [INFO] ::1 - - [19/Sep/2025:10:35:23 +0000] "GET /tasks?filter=completed HTTP/1.1" 200 2580 "http://localhost:3000/tasks?filter=pending" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:35:23 [INFO] ::1 - - [19/Sep/2025:10:35:23 +0000] "GET /css/style.css HTTP/1.1" 304 - "http://localhost:3000/tasks?filter=completed" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:35:23 [INFO] ::1 - - [19/Sep/2025:10:35:23 +0000] "GET /js/script.js HTTP/1.1" 304 - "http://localhost:3000/tasks?filter=completed" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:35:24 [INFO] ::1 - - [19/Sep/2025:10:35:24 +0000] "GET /js/script.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:35:24 [WARN] 404 - Page not found: /favicon.ico
+2025-09-19 11:35:24 [ERROR] Error: Failed to lookup view "404" in views directory "/Users/mac/to-do app/views" - URL: /favicon.ico - Method: GET
+2025-09-19 11:35:24 [INFO] ::1 - - [19/Sep/2025:10:35:24 +0000] "GET /favicon.ico HTTP/1.1" 500 1277 "http://localhost:3000/tasks?filter=completed" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:35:24 [INFO] ::1 - - [19/Sep/2025:10:35:24 +0000] "GET /tasks?filter=deleted HTTP/1.1" 200 2580 "http://localhost:3000/tasks?filter=completed" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:35:25 [INFO] ::1 - - [19/Sep/2025:10:35:25 +0000] "GET /css/style.css HTTP/1.1" 304 - "http://localhost:3000/tasks?filter=deleted" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:35:25 [INFO] ::1 - - [19/Sep/2025:10:35:25 +0000] "GET /js/script.js HTTP/1.1" 304 - "http://localhost:3000/tasks?filter=deleted" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:35:25 [INFO] ::1 - - [19/Sep/2025:10:35:25 +0000] "GET /js/script.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:35:25 [WARN] 404 - Page not found: /favicon.ico
+2025-09-19 11:35:25 [ERROR] Error: Failed to lookup view "404" in views directory "/Users/mac/to-do app/views" - URL: /favicon.ico - Method: GET
+2025-09-19 11:35:25 [INFO] ::1 - - [19/Sep/2025:10:35:25 +0000] "GET /favicon.ico HTTP/1.1" 500 1277 "http://localhost:3000/tasks?filter=deleted" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:35:26 [INFO] ::1 - - [19/Sep/2025:10:35:26 +0000] "GET /tasks HTTP/1.1" 304 - "http://localhost:3000/tasks?filter=deleted" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:35:26 [INFO] ::1 - - [19/Sep/2025:10:35:26 +0000] "GET /css/style.css HTTP/1.1" 304 - "http://localhost:3000/tasks" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:35:26 [INFO] ::1 - - [19/Sep/2025:10:35:26 +0000] "GET /js/script.js HTTP/1.1" 304 - "http://localhost:3000/tasks" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:35:26 [INFO] ::1 - - [19/Sep/2025:10:35:26 +0000] "GET /js/script.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:35:26 [WARN] 404 - Page not found: /favicon.ico
+2025-09-19 11:35:26 [ERROR] Error: Failed to lookup view "404" in views directory "/Users/mac/to-do app/views" - URL: /favicon.ico - Method: GET
+2025-09-19 11:35:26 [INFO] ::1 - - [19/Sep/2025:10:35:26 +0000] "GET /favicon.ico HTTP/1.1" 500 1277 "http://localhost:3000/tasks" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:35:27 [ERROR] Error: Failed to lookup view "createTask" in views directory "/Users/mac/to-do app/views" - URL: /tasks/create - Method: GET
+2025-09-19 11:35:27 [INFO] ::1 - - [19/Sep/2025:10:35:27 +0000] "GET /tasks/create HTTP/1.1" 500 1277 "http://localhost:3000/tasks" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-19 11:56:54 [ERROR] Error: Failed to lookup view "createTask" in views directory "/Users/mac/to-do app/views" - URL: /tasks/create - Method: GET
+2025-09-19 11:56:54 [INFO] ::1 - - [19/Sep/2025:10:56:54 +0000] "GET /tasks/create HTTP/1.1" 500 1277 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
